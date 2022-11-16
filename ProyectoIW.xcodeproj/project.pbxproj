@@ -13,6 +13,7 @@
 		AF209493291D59D400A6F6CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF209492291D59D400A6F6CB /* Preview Assets.xcassets */; };
 		AFE25642292543DA00DA8E3B /* Usuarios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFE25640292543DA00DA8E3B /* Usuarios.xcdatamodeld */; };
 		AFE25645292545E100DA8E3B /* InformacionUsuariosbase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE25644292545E100DA8E3B /* InformacionUsuariosbase.swift */; };
+		AFE2564829254BC200DA8E3B /* ListCeldaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2564729254BC200DA8E3B /* ListCeldaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AF209492291D59D400A6F6CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFE25641292543DA00DA8E3B /* Usuarios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Usuarios.xcdatamodel; sourceTree = "<group>"; };
 		AFE25644292545E100DA8E3B /* InformacionUsuariosbase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformacionUsuariosbase.swift; sourceTree = "<group>"; };
+		AFE2564729254BC200DA8E3B /* ListCeldaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCeldaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		AF20948A291D59D300A6F6CB /* ProyectoIW */ = {
 			isa = PBXGroup;
 			children = (
+				AFE2564629254B8800DA8E3B /* views */,
 				AFE25643292545C100DA8E3B /* swiftfile */,
 				AF20948B291D59D300A6F6CB /* ProyectoIWApp.swift */,
 				AF20948D291D59D300A6F6CB /* ContentView.swift */,
@@ -79,6 +82,14 @@
 				AFE25644292545E100DA8E3B /* InformacionUsuariosbase.swift */,
 			);
 			path = swiftfile;
+			sourceTree = "<group>";
+		};
+		AFE2564629254B8800DA8E3B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AFE2564729254BC200DA8E3B /* ListCeldaView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				AFE25642292543DA00DA8E3B /* Usuarios.xcdatamodeld in Sources */,
 				AF20948E291D59D300A6F6CB /* ContentView.swift in Sources */,
 				AF20948C291D59D300A6F6CB /* ProyectoIWApp.swift in Sources */,
+				AFE2564829254BC200DA8E3B /* ListCeldaView.swift in Sources */,
 				AFE25645292545E100DA8E3B /* InformacionUsuariosbase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
