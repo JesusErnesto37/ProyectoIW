@@ -16,7 +16,7 @@ struct ContentView: View {
                 
             }
             .navigationTitle("Usuarios")
-            }
+            }//fin navigation
     }
 }
 
