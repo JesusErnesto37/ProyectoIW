@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1A5699292698450028D577 /* NUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1A5698292698450028D577 /* NUsuario.swift */; };
 		AF20948C291D59D300A6F6CB /* ProyectoIWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20948B291D59D300A6F6CB /* ProyectoIWApp.swift */; };
 		AF20948E291D59D300A6F6CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20948D291D59D300A6F6CB /* ContentView.swift */; };
 		AF209490291D59D400A6F6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF20948F291D59D400A6F6CB /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF1A5698292698450028D577 /* NUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NUsuario.swift; sourceTree = "<group>"; };
 		AF209488291D59D300A6F6CB /* ProyectoIW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoIW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF20948B291D59D300A6F6CB /* ProyectoIWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoIWApp.swift; sourceTree = "<group>"; };
 		AF20948D291D59D300A6F6CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				AFE2564729254BC200DA8E3B /* ListCeldaView.swift */,
+				AF1A5698292698450028D577 /* NUsuario.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				AFE25642292543DA00DA8E3B /* Usuarios.xcdatamodeld in Sources */,
 				AF20948E291D59D300A6F6CB /* ContentView.swift in Sources */,
 				AF20948C291D59D300A6F6CB /* ProyectoIWApp.swift in Sources */,
+				AF1A5699292698450028D577 /* NUsuario.swift in Sources */,
 				AFE2564829254BC200DA8E3B /* ListCeldaView.swift in Sources */,
 				AFE25645292545E100DA8E3B /* InformacionUsuariosbase.swift in Sources */,
 			);

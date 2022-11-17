@@ -9,14 +9,25 @@ import SwiftUI
 
 struct ListCeldaView: View {
     var body: some View {
+        HStack{
+            Text("Username")
+                .foregroundColor(.white)
+                .padding(50)
+                .background(.gray)
+                .font(.custom("Arial", size: 20))
+                .clipShape(Circle())
+            
+            
+        
+        
         VStack(alignment: .leading){
             
-            Text("nombre").font(.custom("Arial", size:30)).foregroundColor(.blue).padding(14)
-        Text("apellido").font(.custom("Arial", size:30)).foregroundColor(.blue).padding(14)
-        Text("username").font(.custom("Arial", size:30)).foregroundColor(.blue).padding(14)
-        Text("rolid").font(.custom("Arial", size:30)).foregroundColor(.blue).padding(14)
+            Text("nombre").font(.custom("Arial", size:24)).foregroundColor(.blue)
+        Text("apellido").font(.custom("Arial", size:20)).foregroundColor(.blue)
+        Text("username").font(.custom("Arial", size:14)).foregroundColor(.blue)
             
-        }
+        }//cierra vstack
+        }//cierra hstack
         
     }
 }

@@ -13,15 +13,20 @@ struct ContentView: View {
         NavigationView {
             VStack{
             List{
-             Text("nombre")
+                ListCeldaView()
                 
             }//fin list
                 Button(action:{// boton de crear usuarios
                 }){
-                    HStack{
-                        Image(systemName: "person.badge.plus")
-                        Text("Crear nuevo usuario")
-                    }.foregroundColor(.white).padding(12).background(.blue).cornerRadius(18)
+                    NavigationLink(destination: NUsuario()){
+                        HStack{
+                            Image(systemName: "person.badge.plus")
+                            Text("Crear nuevo usuario")
+                        }.foregroundColor(.white).padding(12).background(.blue).cornerRadius(18)
+                        
+                        
+                    }
+                
                 }
             }//fin vstack
             .navigationTitle("Usuarios")
