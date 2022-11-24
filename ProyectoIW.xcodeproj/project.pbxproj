@@ -68,6 +68,7 @@
 				AF20948F291D59D400A6F6CB /* Assets.xcassets */,
 				AF209491291D59D400A6F6CB /* Preview Content */,
 				AFE25640292543DA00DA8E3B /* Usuarios.xcdatamodeld */,
+				AF01429E292E8112001DE439 /* CDM.swift */,
 			);
 			path = ProyectoIW;
 			sourceTree = "<group>";
@@ -84,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				AFE25644292545E100DA8E3B /* InformacionUsuariosbase.swift */,
-				AF01429E292E8112001DE439 /* CDM.swift */,
 			);
 			path = swiftfile;
 			sourceTree = "<group>";

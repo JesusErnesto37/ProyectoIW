@@ -40,7 +40,7 @@ class CDM {
     }
     
     func leerTU() -> [Usuarios]{
-        let fetchRequest : NSFetchRequest<Usuarios> = Producto.fetchRequest()
+        let fetchRequest : NSFetchRequest<Usuarios> = Usuarios.fetchRequest()
         
         do{
             return try persistentContainer.viewContext.fetch(fetchRequest)
