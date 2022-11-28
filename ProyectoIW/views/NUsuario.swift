@@ -8,77 +8,50 @@
 import SwiftUI
 
 struct NUsuario: View {
-   
-    @State private var id = ""
-    @State private var nombre = ""
-    @State private var apellido = ""
-    @State private var username = ""
-    @State private var rolid = ""
-    @State private var ide = 0
-    @State private var rolide = 0
+    let cdm: CDM
+    @State var id = ""
+    @State var nombre = ""
+    @State var apellido = ""
+    @State var username = ""
+    @State var rolid = ""
     
-    @Environment(\.managedObjectContext) var conexionBase
+   
     
     var body: some View {
         VStack{
             Text("Nuevo Usuario").font(.title.bold())
             Spacer()
             
-            TextField("ID: ", text: self.$id)
+            TextField("ID: ", text: $id)
                 .font(.custom("Arial", size: 20)).padding(2)
-            TextField("Nombre: ", text: self.$nombre)
+            TextField("Nombre: ", text: $nombre)
                 .font(.custom("Arial", size: 20)).padding(2)
-            TextField("Apellido: ", text: self.$apellido)
+            TextField("Apellido: ", text: $apellido)
                 .font(.custom("Arial", size: 20)).padding(2)
-            TextField("Username: ", text: self.$username)
+            TextField("Username: ", text: $username)
                 .font(.custom("Arial", size: 20)).padding(2)
-            TextField("Rol: ", text: self.$rolid)
+            TextField("Rol: ", text: $rolid)
                 .font(.custom("Arial", size: 20)).padding(2)
                 .keyboardType(.phonePad)
             
             
             Spacer()
-            Button(action:{
-               // let ide = Int32(id)
-              //  let rolide = Int32(rolid)
-                let nuevoDatoGrabar = informacionUsuariosbase(context: self.conexionBase)
-                nuevoDatoGrabar.id = Int32(self.id) ?? 0
-                nuevoDatoGrabar.nombre = self.nombre
-                nuevoDatoGrabar.apellido = self.nombre
-                nuevoDatoGrabar.username = self.username
-                nuevoDatoGrabar.rolid = Int32(self.rolid) ?? 0
+            Button("Guardar"){
+                
+                cdm.guardarU(id: id, nombre: nombre, apellido: apellido, username: username, rolid: rolid)
+      
+            }
+          
                 
             
-        
-                do{
-                    try self.conexionBase.save()
-                    print("se guardo")
-                } catch let verificarErroras as NSError {
-                    print("Parece que hay un problema", verificarErroras.localizedDescription)
-                }
-                
-                
-                
-            }){
                 HStack{
                     Image(systemName: "person.badge.plus")
                     Text("Guardar nuevo usuario")
                 }.foregroundColor(.white).padding(12).background(.blue).cornerRadius(18)
                 
-            }
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+        
             
             
             
@@ -88,6 +61,7 @@ struct NUsuario: View {
 
 struct NUsuario_Previews: PreviewProvider {
     static var previews: some View {
-        NUsuario()
+        ContentView(coreDM: CDM())
     }
 }
+

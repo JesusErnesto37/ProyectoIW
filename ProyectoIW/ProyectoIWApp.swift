@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct ProyectoIWApp: App {
+   
  //   let persistenceContainer = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(coreDM: CDM())
      //           .environment(\.managedObjectContext, persistenceContainer.container.viewContext)
         }
     

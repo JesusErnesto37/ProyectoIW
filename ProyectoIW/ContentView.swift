@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    let coreDM: CDM
     var body: some View {
 
         NavigationView {
@@ -19,7 +19,7 @@ struct ContentView: View {
             }//fin list
                 Button(action:{// boton de crear usuarios
                 }){
-                    NavigationLink(destination: NUsuario()){
+                    NavigationLink(destination: NUsuario(cdm: coreDM)){
                         HStack{
                             Image(systemName: "person.badge.plus")
                             Text("Crear nuevo usuario")
@@ -37,6 +37,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(coreDM: CDM())
     }
 }

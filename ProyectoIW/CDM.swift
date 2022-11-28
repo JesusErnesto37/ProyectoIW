@@ -21,7 +21,7 @@ class CDM {
             }
         })
     }
-        func guardarU(id: Int32, nombre: String, apellido: String, username: String, rolid:Int32){
+        func guardarU(id: String, nombre: String, apellido: String, username: String, rolid:String){
             let usuario = Usuarios(context: persistentContainer.viewContext)
             usuario.id = id
             usuario.nombre = nombre

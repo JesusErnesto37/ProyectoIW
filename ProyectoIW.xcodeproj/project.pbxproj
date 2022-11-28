@@ -14,7 +14,6 @@
 		AF209490291D59D400A6F6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF20948F291D59D400A6F6CB /* Assets.xcassets */; };
 		AF209493291D59D400A6F6CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF209492291D59D400A6F6CB /* Preview Assets.xcassets */; };
 		AFE25642292543DA00DA8E3B /* Usuarios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFE25640292543DA00DA8E3B /* Usuarios.xcdatamodeld */; };
-		AFE25645292545E100DA8E3B /* InformacionUsuariosbase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE25644292545E100DA8E3B /* InformacionUsuariosbase.swift */; };
 		AFE2564829254BC200DA8E3B /* ListCeldaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2564729254BC200DA8E3B /* ListCeldaView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		AF20948F291D59D400A6F6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF209492291D59D400A6F6CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFE25641292543DA00DA8E3B /* Usuarios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Usuarios.xcdatamodel; sourceTree = "<group>"; };
-		AFE25644292545E100DA8E3B /* InformacionUsuariosbase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformacionUsuariosbase.swift; sourceTree = "<group>"; };
 		AFE2564729254BC200DA8E3B /* ListCeldaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCeldaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +82,6 @@
 		AFE25643292545C100DA8E3B /* swiftfile */ = {
 			isa = PBXGroup;
 			children = (
-				AFE25644292545E100DA8E3B /* InformacionUsuariosbase.swift */,
 			);
 			path = swiftfile;
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 				AF20948C291D59D300A6F6CB /* ProyectoIWApp.swift in Sources */,
 				AF1A5699292698450028D577 /* NUsuario.swift in Sources */,
 				AFE2564829254BC200DA8E3B /* ListCeldaView.swift in Sources */,
-				AFE25645292545E100DA8E3B /* InformacionUsuariosbase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
