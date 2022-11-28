@@ -39,6 +39,19 @@ class CDM {
             
     }
     
+    func actualizarU(usuario: Usuarios){
+        let fetchRequest : NSFetchRequest<Usuarios> = Usuarios.fetchRequest()
+        let predicate = NSPredicate(format: "id = %@", usuario.nombre ?? "")
+        
+        do{
+            try persistentContainer.viewContext.save()
+            print("Usuario actualizado")
+        }
+        catch{
+            print("fallo en guardar \(error) ")
+        }
+    }
+    
     func leerTU() -> [Usuarios]{
         let fetchRequest : NSFetchRequest<Usuarios> = Usuarios.fetchRequest()
         

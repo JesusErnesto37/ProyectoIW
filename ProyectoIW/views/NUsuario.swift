@@ -39,15 +39,13 @@ struct NUsuario: View {
             Button("Guardar"){
                 
                 cdm.guardarU(id: id, nombre: nombre, apellido: apellido, username: username, rolid: rolid)
-      
-            }
+                
+                
+            }.foregroundColor(.white).padding(12).background(.blue).cornerRadius(18)
           
                 
             
-                HStack{
-                    Image(systemName: "person.badge.plus")
-                    Text("Guardar nuevo usuario")
-                }.foregroundColor(.white).padding(12).background(.blue).cornerRadius(18)
+                
                 
             
             

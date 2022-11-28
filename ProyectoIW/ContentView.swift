@@ -13,10 +13,10 @@ struct ContentView: View {
 
         NavigationView {
             VStack{
-            List{
-                ListCeldaView()
+            
+                ListCeldaView(cored: coreDM)
                 
-            }//fin list
+            //fin list
                 Button(action:{// boton de crear usuarios
                 }){
                     NavigationLink(destination: NUsuario(cdm: coreDM)){
