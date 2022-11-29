@@ -18,9 +18,9 @@ struct ListCeldaView: View {
         List{
             ForEach(UserArray, id: \.self){
                 user in
-                NavigationLink( destination:EUsuario(coreM: cored)){
+                NavigationLink( destination:EUsuario(coreM: cored, nombre: $nombre, apellido: $apellido, username: $username, seleccionado: $seleccionado)){
                 HStack{
-           
+                    
                 VStack(alignment: .leading){
                     
                 Text(user.nombre ?? "").font(.custom("Arial", size:24)).foregroundColor(.blue)
@@ -28,16 +28,17 @@ struct ListCeldaView: View {
                 Text(user.username ?? "").font(.custom("Arial", size:14)).foregroundColor(.blue)
                     
                 }//cierra vstack
-                .onTapGesture{
+           
+                    
+                }//cierra hstack
+                   
+                }     .onTapGesture{
                     seleccionado = user
                     nombre = user.nombre ?? ""
                     apellido = user.apellido ?? ""
                     username = user.username ?? ""
+                    mostrarUsuario()
                 }
-                    
-                }//cierra hstack
-                
-            }
             }
             
             

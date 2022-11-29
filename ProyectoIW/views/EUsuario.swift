@@ -9,11 +9,10 @@ import SwiftUI
 
 struct EUsuario: View {
     let coreM: CDM
-    @State var nombre = ""
-    @State var apellido = ""
-    @State var username = ""
-    @State var seleccionado:Usuarios?
-    @State var UserArrays = [Usuarios]()
+    @Binding var nombre: String
+    @Binding var apellido: String
+    @Binding var username: String
+    @Binding var seleccionado:Usuarios?
   
     var body: some View {
 
