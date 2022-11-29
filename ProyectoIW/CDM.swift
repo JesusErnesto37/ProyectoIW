@@ -39,11 +39,52 @@ class CDM {
             
     }
     
+    func guardarU(nombre: String, apellido: String, username: String){
+        let usuario = Usuarios(context: persistentContainer.viewContext)
+      
+        usuario.nombre = nombre
+        usuario.apellido = apellido
+        usuario.username = username
+        
+        
+        do{
+            try persistentContainer.viewContext.save()
+            print("Usuario guardado")
+        }
+        catch{
+            print("fallo en guardar \(error) ")
+        }
+        
+}
+    
+    func leerUnu(nombre:String) -> Usuarios?{
+        let fetchRequest : NSFetchRequest<Usuarios> = Usuarios.fetchRequest()
+        let predicate = NSPredicate(format: "id = %@", nombre)
+        fetchRequest.predicate = predicate
+        
+        do{
+            let datos = try persistentContainer.viewContext.fetch(fetchRequest)
+            return datos.first
+        }catch{
+            persistentContainer.viewContext.rollback()
+            print("Failed to save context \(error.localizedDescription)")
+        }
+        return nil
+    }
+    
     func actualizarU(usuario: Usuarios){
         let fetchRequest : NSFetchRequest<Usuarios> = Usuarios.fetchRequest()
         let predicate = NSPredicate(format: "id = %@", usuario.nombre ?? "")
+        fetchRequest.predicate = predicate
+        
+        //var user = persistentContainer.viewContext.updatedObjects([usuario])
         
         do{
+            let datos = try persistentContainer.viewContext.fetch(fetchRequest)
+            let u = datos.first
+            u?.nombre = usuario.nombre
+            u?.apellido = usuario.apellido
+            u?.username = usuario.username
             try persistentContainer.viewContext.save()
             print("Usuario actualizado")
         }

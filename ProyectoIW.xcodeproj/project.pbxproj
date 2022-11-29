@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF00401829366A3D001AEA24 /* EUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00401729366A3D001AEA24 /* EUsuario.swift */; };
 		AF01429F292E8112001DE439 /* CDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01429E292E8112001DE439 /* CDM.swift */; };
 		AF1A5699292698450028D577 /* NUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1A5698292698450028D577 /* NUsuario.swift */; };
 		AF20948C291D59D300A6F6CB /* ProyectoIWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20948B291D59D300A6F6CB /* ProyectoIWApp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF00401729366A3D001AEA24 /* EUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUsuario.swift; sourceTree = "<group>"; };
 		AF01429E292E8112001DE439 /* CDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDM.swift; sourceTree = "<group>"; };
 		AF1A5698292698450028D577 /* NUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NUsuario.swift; sourceTree = "<group>"; };
 		AF209488291D59D300A6F6CB /* ProyectoIW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoIW.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 			children = (
 				AFE2564729254BC200DA8E3B /* ListCeldaView.swift */,
 				AF1A5698292698450028D577 /* NUsuario.swift */,
+				AF00401729366A3D001AEA24 /* EUsuario.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				AF20948C291D59D300A6F6CB /* ProyectoIWApp.swift in Sources */,
 				AF1A5699292698450028D577 /* NUsuario.swift in Sources */,
 				AFE2564829254BC200DA8E3B /* ListCeldaView.swift in Sources */,
+				AF00401829366A3D001AEA24 /* EUsuario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

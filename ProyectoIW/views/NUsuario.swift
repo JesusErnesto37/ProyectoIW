@@ -43,13 +43,7 @@ struct NUsuario: View {
                 
             }.foregroundColor(.white).padding(12).background(.blue).cornerRadius(18)
           
-                
-            
-                
-                
-            
-            
-        
+          
             
             
             

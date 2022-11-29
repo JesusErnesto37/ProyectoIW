@@ -13,10 +13,12 @@ struct ListCeldaView: View {
     @State var apellido = ""
     @State var username = ""
     @State var UserArray = [Usuarios]()
+    @State var seleccionado:Usuarios?
     var body: some View {
         List{
             ForEach(UserArray, id: \.self){
                 user in
+                NavigationLink(destination:EUsuario(coreM: cored)){
                 HStack{
            
                 VStack(alignment: .leading){
@@ -26,9 +28,20 @@ struct ListCeldaView: View {
                 Text(user.username ?? "").font(.custom("Arial", size:14)).foregroundColor(.blue)
                     
                 }//cierra vstack
+                .onTapGesture{
+                    seleccionado = user
+                    nombre = user.nombre ?? ""
+                    apellido = user.apellido ?? ""
+                    username = user.username ?? ""
+                }
+                    
                 }//cierra hstack
                 
-            }.onDelete(perform:{
+            }
+            }
+            
+            
+            .onDelete(perform:{
                 indexSet in
                 indexSet.forEach({ index in
                     let usuario = UserArray[index]
@@ -40,6 +53,7 @@ struct ListCeldaView: View {
                 
             })
             Spacer()
+             
        
         }.padding().onAppear(perform: {
             mostrarUsuario()

@@ -29,6 +29,18 @@ struct ContentView: View {
                     }
                 
                 }
+                Button(action:{// boton de crear usuarios
+                }){
+                    NavigationLink(destination: EUsuario(coreM: coreDM)){
+                        HStack{
+                            Image(systemName: "person.badge.plus")
+                            Text("editar Usuarios")
+                        }.foregroundColor(.white).padding(12).background(.blue).cornerRadius(18)
+                        
+                        
+                    }
+                
+                }
             }//fin vstack
             .navigationTitle("Usuarios")
             }//fin navigation
