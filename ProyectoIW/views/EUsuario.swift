@@ -18,47 +18,7 @@ struct EUsuario: View {
     var body: some View {
 
         NavigationView {
-            VStack{
-            
-                List{
-                    ForEach(UserArrays, id: \.self){
-                        user in
-                        HStack{
-                   
-                        VStack(alignment: .leading){
-                            
-                        Text(user.nombre ?? "").font(.custom("Arial", size:24)).foregroundColor(.blue)
-                        Text(user.apellido ?? "").font(.custom("Arial", size:20)).foregroundColor(.blue)
-                        Text(user.username ?? "").font(.custom("Arial", size:14)).foregroundColor(.blue)
-                            
-                        }//cierra vstack
-                        .onTapGesture{
-                            seleccionado = user
-                            nombre = user.nombre ?? ""
-                            apellido = user.apellido ?? ""
-                            username = user.username ?? ""
-                        }
-                            
-                        }//cierra hstack
-                        
-                    }
-                    
-                    
-                    .onDelete(perform:{
-                        indexSet in
-                        indexSet.forEach({ index in
-                            let usuario = UserArrays[index]
-                            coreM.borrarU(usuario: usuario)
-                            mostrarUsuario()
-                            
-                            
-                        })
-                        
-                    })
-                    Spacer()
-                     
-               
-                }
+           
                 VStack{
                     Text("Editar Usuario").font(.title.bold())
                     Spacer()
@@ -101,10 +61,8 @@ struct EUsuario: View {
           
             }//fin navigation
     }
-    func mostrarUsuario(){
-        UserArrays = coreM.leerTU()
-    }
-}
+
+
 
 struct EUsuario_Previews: PreviewProvider {
     static var previews: some View {

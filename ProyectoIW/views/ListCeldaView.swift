@@ -18,7 +18,7 @@ struct ListCeldaView: View {
         List{
             ForEach(UserArray, id: \.self){
                 user in
-                NavigationLink(destination:EUsuario(coreM: cored)){
+                NavigationLink( destination:EUsuario(coreM: cored)){
                 HStack{
            
                 VStack(alignment: .leading){
